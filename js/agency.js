@@ -183,13 +183,12 @@ function main(){
 	//console.log($("nav").outerHeight());
 
 
-	$( window )
-  .mouseup(function() {
-	console.log("up");
-	sc.enable();
-  })
-  .mousedown(function() {
-	console.log("down!");
-	sc.disable();
-  });
+	$(window).mouseup(function() {
+            console.log("up");
+            sc.enable();
+    })
+    .mousedown(function() {
+	    console.log("down!");
+	    sc.disable();
+    });
 }
