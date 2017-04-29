@@ -169,7 +169,7 @@ function main(){
 		console.log("NEW CURRENT SECTION: "+this.current_section);
         }
 
-	var sc  = new ScrollSticker(["video_section", "what", "why", "how", "team", "services", "contact"]);
+	var sc  = new ScrollSticker([/*"video_section",*/ "what", "why", "how", "team", "services", "contact"]);
 	
 	$('a.page-scroll').bind('click', function(event) {
 		var $anchor = $(this);
