@@ -1,0 +1,16 @@
+.row-eq-height-column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.col-vhcenter, .col-vhcenter-rjust, .col-vhcenter-ljust {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.col-vhcenter-rjust {
+  text-align: right; }
+
+.col-vhcenter-ljust {
+  text-align: left; }
