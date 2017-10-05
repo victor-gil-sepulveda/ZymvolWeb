@@ -315,7 +315,7 @@ section {
 
 section h2.section-heading {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   font-size: 40px; }
 
 section h3.section-subheading {
@@ -771,4 +771,5 @@ img::-moz-selection {
   background: 0 0; }
 
 body {
-  webkit-tap-highlight-color: #0063AA; }
+  webkit-tap-highlight-color: #0063AA;
+  font-size: 16px; }
