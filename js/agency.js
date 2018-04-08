@@ -170,10 +170,10 @@ function main(){
 	
 	$('a.page-scroll').bind('click', function(event) {
 		var $anchor = $(this);
-		sc.disable();
+		//sc.disable();
 		$('html, body').stop().animate({
 		    scrollTop: $($anchor.attr('href')).offset().top
-		}, 1500, 'easeInOutCubic', function(){sc.enable();});
+		}, 1500, 'easeInOutCubic', function(){/*sc.enable();*/});
 		event.preventDefault();
 	});
 
@@ -251,4 +251,20 @@ function main(){
 
 	    location: true,
 	 });
+
+
+	$("#privacy_contact,#privacy_footer").on('click', function(){
+        BootstrapDialog.show({
+            title: 'Privacy Policy',
+            message: $('<div></div>').load('lopd/privacy_policy.html')
+        });
+    });
+
+    $("#terms_of_use").on('click', function(){
+        BootstrapDialog.show({
+            title: 'Terms of Use',
+            message: $('<div></div>').load('lopd/terms_of_service.html')
+        });
+    });
+
 }
